@@ -42,7 +42,7 @@ return cloneMap(r.values)
 
 func (r *reader) Merge(kvs ...*KeyValue) error {}
 ```
-* 通过clineMap深拷贝map 后，读取传入kvs ,decoder及convertMap处理kvs
+* 通过cloneMap深拷贝map 后，读取传入kvs ,decoder及convertMap处理kvs
 * 利用mergo.Map复制处理后的kvs 至拷贝出来的map中，最终更新到reader的values
 
 ## config
